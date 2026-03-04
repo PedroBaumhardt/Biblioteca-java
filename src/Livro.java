@@ -3,21 +3,21 @@
 public class Livro {
     public enum ECategoria {DIDATICO, INFANTIL, FICCAO, AUTO_AJUDA}
 
-    private final String id;
+    private final int id;
     private final String titulo;
     private final ECategoria categoria;
     private final String autor;
     private final String dataPublicacao;
 
-    public Livro(String id, String titulo, ECategoria categoria, String autor, String dataPublicacao) {
+    public Livro(int id, String titulo, String categoria, String autor, String dataPublicacao) {
         this.id = id;
         this.titulo = titulo;
-        this.categoria = categoria;
+        this.categoria = ECategoria.valueOf(categoria);
         this.autor = autor;
         this.dataPublicacao = dataPublicacao;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
