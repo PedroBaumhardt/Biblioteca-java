@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ProjetoBiblioteca {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         boolean run = true;
         Biblioteca biblioteca = new Biblioteca();
         Scanner sc = new Scanner(System.in);
