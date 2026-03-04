@@ -1,5 +1,3 @@
-
-
 public class Livro {
     public enum ECategoria {DIDATICO, INFANTIL, FICCAO, AUTO_AJUDA}
 

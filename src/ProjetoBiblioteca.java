@@ -9,7 +9,8 @@ public class ProjetoBiblioteca {
             System.out.println("\n\n1 - Inserir livro\n2 - Remover livro\n3 - Mostrar numero de livros\n4 - Sair");
             switch (sc.nextInt()) {
                 case 1:
-                    biblioteca.inserirLivro(bookFactory());
+                    if( biblioteca.inserirLivro(bookFactory()) ) { System.out.println("\nLivro inserido com sucesso!"); }
+                    else { System.out.println("\nBiblioteca cheia!"); }
                     break;
                 case 2:
                     System.out.println("\n\nDigite o id do livro que deseja remover:");
