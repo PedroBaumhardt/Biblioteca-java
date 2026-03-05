@@ -34,4 +34,8 @@ public class Livro {
     public String getDataPublicacao() {
         return dataPublicacao;
     }
+
+    public String toString() {
+        return "Livro: " + this.id + " - " + this.titulo + " - " + this.categoria + " - " + this.autor + " - " + this.dataPublicacao;
+    }
 }

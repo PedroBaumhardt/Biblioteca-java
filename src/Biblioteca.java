@@ -29,6 +29,14 @@ public class Biblioteca {
         return flag;
     }
 
+    public void imprimirLivros() {
+        for (int i=0; i<this.size; i++) {
+            if (livros[i] != null) {
+                System.out.println(livros[i].toString());
+            }
+        }
+    }
+
     public int getTotalLivros() {
         return totalLivros;
     }
