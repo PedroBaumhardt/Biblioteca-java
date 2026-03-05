@@ -6,7 +6,7 @@ public class ProjetoBiblioteca {
         Biblioteca biblioteca = new Biblioteca();
         Scanner sc = new Scanner(System.in);
         while(run) {
-            System.out.println("\n\n1 - Inserir livro\n2 - Remover livro\n3 - Mostrar numero de livros\n4 - Imprimir livros\n5 - Sair");
+            System.out.println("\n\n1 - Inserir livro\n2 - Remover livro\n3 - Mostrar numero de livros\n4 - Imprimir livros\n5 - Autores ordenados por quantidade de livros\n6 - Sair");
             switch (sc.nextInt()) {
                 case 1:
                     if( biblioteca.inserirLivro(bookFactory()) ) { System.out.println("\nLivro inserido com sucesso!"); }
@@ -23,6 +23,9 @@ public class ProjetoBiblioteca {
                     biblioteca.imprimirLivros();
                     break;
                 case 5:
+                    biblioteca.imprimirAutoresDec();
+                    break;
+                case 6:
                     run = false;
                     break;
                 default:
